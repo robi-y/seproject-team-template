@@ -1,4 +1,4 @@
-# seproject-team-Speech Therapy
+# Speech Therapy Project
 
 A template repository with wiki for a team project at JCE's software engineering course
 
