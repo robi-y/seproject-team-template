@@ -2,7 +2,7 @@
 
 A possibility for Speech Tharopists to save in the cloud documents  with data about there clients.
 
-![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
+![project logo (this one is taken from basecamp)](https://github.com/oshritush/seproject-team-template/blob/master/Logo.jpg)
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
 - Alright, currently only a landing page...
