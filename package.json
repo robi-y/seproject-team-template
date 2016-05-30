@@ -1,16 +1,39 @@
 {
-  "name": "Speech Therapy",
+  "name": "click-a-table",
   "version": "1.0.0",
-  "description": "mean stack website",
+  "description": "README",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Gitty&Oshrit&Sari&Sara",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navacohen90/Click-a-Table.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navacohen90/Click-a-Table/issues"
+  },
+  "homepage": "https://github.com/navacohen90/Click-a-Table#readme",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+		"bcryptjs": "^2.1.0",
+		"body-parser": "^1.13.2",
+		"ejs": "^2.3.3",
+		"express": "^4.13.0",
+		"express-jwt": "^3.0.1",
+		"express-session": "^1.11.3",
+		"jsonwebtoken": "^5.0.2",
+		"lodash": "^3.10.0",
+		"mongodb": "^2.1.16",
+		"mongoskin": "^2.1.0",
+		"q": "^1.4.1",
+		"request": "^2.58.0",
+		"rootpath": "^0.1.2",
+		"body-parser": "^1.15.0",
+		"connect": "^3.4.1",
+		"mongoose": "^4.4.12",
+		"multer": "^1.1.0"
   }
 }
-
