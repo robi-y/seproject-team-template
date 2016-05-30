@@ -1,17 +1,19 @@
-var express = require('express')
+require('rootpath')();
+var express = require('express'); //for routing
+var app = express(); //init the server
 var path = require('path');
-
 var port = process.env.PORT || 3000;
-var app=express();
+//initalization for using POST calls
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));//read URL encoded
+app.use(bodyParser.json()); //read json data
 
-
-//app.set('view engine', 'ejs'); 
-//app.set('views', path.join(__dirname, 'views'));
- 
+//static routes init
+//app.use('/app', require('./controllers/app.controller'));
 app.use('/app', express.static('app'));
- 
-//app.use('/auth', require('./controllers/auth.controller'));
 
+
+// make '/app' default route
 app.get('/', function (req, res) {
     return res.redirect('/app');
 });
