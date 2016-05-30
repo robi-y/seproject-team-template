@@ -1,6 +1,7 @@
 var express = require('express')
 var path = require('path');
 
+var port = process.env.PORT || 3000;
 var app=express();
 
 
@@ -15,8 +16,7 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
-app.listen(1337, function(){
-   console.log('Server listening at http://');
+//listen on port
+var server = app.listen(port, function(){
+   console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
 });
-
-
