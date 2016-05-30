@@ -1,6 +1,5 @@
-{}
-
-  "name": "project1",
+{
+  "name": "Speech Therapy",
   "version": "1.0.0",
   "description": "mean stack website",
   "main": "server.js",
@@ -13,4 +12,5 @@
   "dependencies": {
     "express": "^4.13.4"
   }
+}
 
