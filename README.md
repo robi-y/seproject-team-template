@@ -4,7 +4,7 @@ A possibility for Speech Tharopists to save in the cloud documents  with data ab
 
 ![project logo (this one is taken from basecamp)](https://github.com/oshritush/seproject-team-template/blob/master/Logo.jpg)
 
-## Please visit our [live application](http://ex1finalosh.azurewebsites.net)
+## Please visit our [live application](http://speechtherapis.azurewebsites.net)
 - Alright, currently only a landing page...
 
 [![Join the chat at https://gitter.im/oshritush/SpeechTherapy](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/oshritush/SpeechTherapy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
