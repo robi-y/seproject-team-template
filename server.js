@@ -1,7 +1,6 @@
-require('rootpath')();
 var express = require('express'); //for routing
 var app = express(); //init the server
-var path = require('path');
+
 var port = process.env.PORT || 3000;
 //initalization for using POST calls
 var bodyParser = require('body-parser');
