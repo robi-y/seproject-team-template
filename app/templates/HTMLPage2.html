@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  lang="he" xmlns="http://www.w3.org/1999/xhtml" >
+
+<head  >
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>מילוי דו"ח</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+<!-- jQuery library -->
+<script type="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script type="" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <style> 
+     #products div  p{
+     width:50%;
+    margin:auto;
+      padding-top:10px;
+   }
+   </style>
+</head>
+
+
+
+<body style="direction:rtl" >
+
+<div class="container" style="padding-top:25px; padding:auto 0px">
+  <h1>סיכום טיפול בשפה ודיבור</h1>
+  
+</div>
+
+ <!-- My  Products     -->  
+  <section id="products" class="row">
+         
+     <div class="col-sm-6" style="float:right">
+     <form role="form">
+      <h3><b>1.פרטי מטופל</b></h3>
+          <div class="form-group col-sm-6 " style="float:right">
+            <label for="name">שם:</label>
+            <input type="text" class="form-control" id="fn"/>
+          </div>
+            <div class="form-group col-sm-6 " style="float:right">
+            <label for="name">משפחה:</label>
+            <input type="text" class="form-control" id="ln"/>
+          </div>
+          
+          <div class="form-group col-sm-6" style="float:right">
+            <label for="id">ת.ז:</label>
+            <input type="text" class="form-control" id="id1"/>
+          </div>
+           <div class="form-group col-sm-6" style="float:right">
+            <label for="id">תאריך לידה:</label>
+            <input type="text" class="form-control" id="burn"/>
+          </div>
+          <div class="form-group col-sm-6" style="float:right">
+            <label for="address">כתובת:</label>
+            <input type="text" class="form-control" id="add"/>
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="sel1">עיר:</label>
+              <select class="form-control" id="city">
+                <option>ירושלים</option>
+                <option>בני ברק</option>
+                <option>תל אביב</option>
+                <option>ראשון לציון</option>
+                <option>פתח תקוה</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6" style="float:right">
+            <label for="address">מס' טלפון:</label>
+            <input type="text" class="form-control" id="phone"/>
+          </div>
+            <div class="form-group col-sm-6" style="float:right">
+            <label for="address">שם האב:</label>
+            <input type="text" class="form-control" id="fathern"/>
+          </div>
+           <div class="form-group col-sm-6" style="float:right">
+            <label for="address">מס' אחים:</label>
+            <input type="text" class="form-control" id="siblings"/>
+          </div>
+          <div class="form-group col-sm-6" style="float:right">
+          <label for="address">שפה:</label>
+         <div class="checkbox">
+          <label><input type="checkbox" name="optradio">עברית    </label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="optradio">אנגלית    </label>
+        </div>
+        <div class="checkbox ">
+          <label><input type="checkbox" name="optradio" >     צרפתית</label>
+        </div>
+        <div class="checkbox ">
+          <label><input type="checkbox" name="optradio" >      רוסית</label>
+        </div>
+        <div class="checkbox ">
+          <label><input type="checkbox" name="optradio" >ספרדית      </label>
+        </div>
+        </div>
+
+        <div class="form-group col-sm-6">
+              <label for="sel1">מסגרת חינוכית:</label>
+              <select class="form-control" id="Select1">
+                <option>רגילה</option>
+                <option>חינוך מיוחד</option>
+                <option>שפה</option>
+              </select>
+            </div>
+                 
+
+            
+
+        </form>
+      </div>
+      
+  <div class="col-sm-6"  >
+   
+    <form role="form">
+    <h3><b>2.פרטי הטיפול</b></h3>
+
+    <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">אבחונים וטיפולים נוספים</label>
+      <textarea class="form-control" rows="6" id="comment"></textarea>
+    </div>
+    <div class="form-group col-sm-6" style="float:right">
+            <label for="address">גורם מפנה:</label>
+            <input type="text" class="form-control" id="send1"/>
+          </div>
+
+          <div class="form-group col-sm-6">
+              <label for="sel1">סיבת ההפניה:</label>
+              <select class="form-control" id="Select2">
+                <option>מובנות דיבור ירודה</option>
+                <option>קשיי שפה</option>
+                <option>אחר</option>
+               
+              </select>
+            </div>
+
+            <div class="form-group col-sm-6" style="float:right">
+            <label for="address">תאריך:</label>
+            <input type="text" class="form-control" id="date"/>
+          </div>
+          <div class="form-group col-sm-6" style="float:right">
+            <label for="address">בדיקת שמיעה:</label>
+            <input type="text" class="form-control" id="ear"/>
+          </div>
+           <div class="form-group col-sm-6" style="float:right">
+            <label for="address">מועד אבחון</label>
+            <input type="text" class="form-control" id="date2"/>
+          </div>
+            <div class="form-group col-sm-6" style="float:right">
+            <label for="address">שם מאבחן:</label>
+            <input type="text" class="form-control" id="speachT"/>
+          </div>
+          <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">תוצאות האבחון:</label>
+      <textarea class="form-control" rows="6" id="result"></textarea>
+    </div>
+    </form>
+  </div>
+                 
+                   
+        </section><!--End of My  Products     -->
+<section id="products" class="row">
+<div class="col-sm-6" style="float:right" >
+<form role="form">
+<h3><b>3.סיכום</b></h3>
+          <div class="form-group col-sm-4" style="float:right">
+            <label for="address">תחילת טיפול</label>
+            <input type="text" class="form-control" id="Text1"/>
+          </div>
+          <div class="form-group col-sm-4" style="float:right">
+            <label for="address">סדרת טיפול מס':</label>
+            <input type="text" class="form-control" id="numof"/>
+          </div>
+           <div class="form-group col-sm-4" style="float:right">
+            <label for="address">סה"כ טיפולים בפועל:</label>
+            <input type="text" class="form-control" id="Text2"/>
+          </div>
+          <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">רקע</label>
+      <textarea class="form-control" rows="6" id="backg"></textarea>
+    </div>
+       <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">תוכנית טיפולית</label>
+      <textarea class="form-control" rows="6" id="prog"></textarea>
+    </div>
+       <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">התקדמות ומהלך הטיפול</label>
+      <textarea class="form-control" rows="6" id="conti"></textarea>
+    </div>
+       <div class="form-group col-sm-10" style="float:right">
+      <label for="comment">המלצות</label>
+      <textarea class="form-control" rows="6" id="recomm"></textarea>
+    </div>
+</form>
+</div>
+<div class="col-sm-6"  >
+<button type="submit" class="btn btn-default">אישור ושליחה</button>
+</div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
