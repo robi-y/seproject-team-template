@@ -9,7 +9,7 @@ A possibility for Speech Tharopists to save in the cloud documents  with data ab
 
 [![Join the chat at https://gitter.im/oshritush/SpeechTherapy](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/oshritush/SpeechTherapy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
+## [Issue Board](https://huboard.com/oshritush/Speech-Therapy/#/milestones)
 
 ## Disclaimer
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
