@@ -1,0 +1,73 @@
+
+<!--=====================
+          Content
+======================-->
+<section id="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="ta__center" style="font-family:BN Amnesia ">
+        התחבר
+      </h3>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <article class="block-1 contacts ">
+    <div class="container_12">
+      <div class="grid_12">
+        
+      </div>
+      <div class="clear"></div>
+        <form id="contact-form">
+		
+		<div ng-form="myForm">
+            <div class="name">        
+                <label>:שם פרטי</label>        
+                <input ng-model="user.firstName" class="form-control" name="firstName" ng-required="true" />
+                <span class="errMessage" ng-show="myForm.firstName.$dirty && myForm.firstName.$error.required">This field is required</span>
+            </div>
+            <div class="name">        
+                <label>:שם משפחה</label>        
+                <input ng-model="user.lastName" class="form-control" name="lastName" ng-required="true" />
+                <span class="errMessage" ng-show="myForm.lastName.$dirty && myForm.lastName.$error.required">This field is required</span>
+            </div>
+            <div class="name">        
+                <label>:שם משתמש</label>        
+                <input ng-model="user.userName" class="form-control" name="userName" ng-required="true" />
+                <span class="errMessage" ng-show="myForm.userName.$dirty && myForm.userName.$error.required">This field is required</span>
+            </div>
+            <div class="">
+                <label>:סיסמא</label> 
+                <input type="password" ng-model="user.password" class="form-control" name="password" ng-required="user.userName != ''" />
+                <span class="errMessage" ng-show="myForm.password.$dirty && myForm.password.$error.required">This field is required</span>
+            </div>
+            <div class="email">
+                <label>:א-מייל</label> 
+                <input ng-model="user.email" type="email"  class="form-control" name="email" ng-required="user.email != ''" />
+                <span class="errMessage" ng-show="myForm.email.$dirty && myForm.email.$error.required">This field is required. </span>
+                <span class="errMessage" ng-show="myForm.email.$dirty && myForm.email.$error.email">Valid email address required</span>
+            </div>
+            <br/>
+            <span class="{{result.class}}">{{result.message}}</span>
+            <br />
+            <br />
+            <button ng-click="createUser()" class="btn btn-primary">הירשם</button>
+            <a href="#/membership" class="btn btn-link">ביטול</a>
+
+            
+        </div>
+		
+          <div class="contact-form-loader"></div>
+          <div class="grid_6">
+		   </div>
+          </div> 
+
+          <div class="modal fade response-message">
+            
+          </div>
+          <div class="clear"></div>
+      </form>   
+      <div class="clear"></div>
+    </div>
+  </article>
+</section>
