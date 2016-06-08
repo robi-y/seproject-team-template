@@ -29,7 +29,7 @@ Please visit our wiki for furthur project info:
 ### Iteration Pages
 - [Iteration 0 - ZFR](../../wiki/iter0-zfr)
 - [Iteration 1 - MVP](https://github.com/oshritush/Speech-Therapy/wiki/MVP-Iteration-1)
-- [Iteration 2 - Feature X]()
+- [Iteration 2 - Feature X](https://github.com/oshritush/Speech-Therapy/wiki/Feature-X-Iteration-2)
 - [Iteration 3 - Feature Y]()
 - [Iteration 4 - Feature Z]()
 
