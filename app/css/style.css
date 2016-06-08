@@ -599,6 +599,13 @@ h1:after {
   height: 51px;
 }
 /****Text styles****/
+
+.errMessage {
+    color: red;
+}
+
+
+
 .text1 {
   color: #1e2439;
   font-size: 30px;

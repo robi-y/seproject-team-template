@@ -1,6 +1,10 @@
 var express = require('express'); //for routing
 var app = express(); //init the server
 
+
+//connection to DB
+var connection=mongoose.createConnection('mogodb'://Gitelki:025385507@ds032319.mlab.com:32319/jce16')
+
 var port = process.env.PORT || 3000;
 //initalization for using POST calls
 var bodyParser = require('body-parser');
