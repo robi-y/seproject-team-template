@@ -1,0 +1,16 @@
+﻿<div ng-repeat="course in courses track by $index">
+    <br/>
+	<div class="order-item">
+		<div>{{course.label}}</div>
+		<div>כמות: {{course.amount}}</div>
+		<div>מחיר: {{course.price}}</div>
+	</div>
+</div>
+
+<div ng-show="{{!noItems}}" class="order-total">
+    <div>סך הכל: {{total}}</div>
+</div>
+
+<div ng-show="{{noItems}}">
+    אין פריטים בהזמנה
+</div>

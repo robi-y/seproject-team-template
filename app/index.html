@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+ <!----><link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-mocks.js"></script>
+    
+    <script src="Register/RegisterController.js"></script>
+    <script src="Login/LoginController.js"></script>
+    <script src="Order/OrderController.js"></script>
+    <script src="Menu/MenuController.js"></script>
+    <script src="Course/CourseController.js"></script>
+    <script src="CourseDetails/CourseDetailsController.js"></script>
+    <script src="Home/HomeController.js"></script>
+    <script src="HomePage/HomePageController.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="directives/headerDirective.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="HomeController">
+        
+
+        <header items="items"></header>
+        <span class="">{{session.user.firstName}} {{session.user.lastName}}</span>
+        <div class="container" ng-view></div>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <span> כל הזכויות שמורות ClickATAble </span>
+        </nav>
+    </div>
+</body>
+</html>

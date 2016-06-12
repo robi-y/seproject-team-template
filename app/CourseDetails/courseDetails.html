@@ -1,0 +1,19 @@
+<div class="menu-item-container">
+    <div class="course-item-img">
+        <img src="css/img/{{course.image}}" />
+    </div>
+    <div class="course-item-desc">
+        <span> {{course.label}}</span>
+        <span>מחיר: {{course.price}}</span>
+        <span>עסקית: {{course.businessPrice}}</span>
+    </div>
+    <div class="row">
+        <label>כמות:</label>
+        <input ng-model="amount" type="number" name="amount"/>
+    </div>
+</div>
+
+<a href="#/course/{{course.courseTypeId}}" class="btn btn-info">חזור לתפריט הקודם</a>
+
+<button ng-click="orderCourse()" class="btn btn-primary">הזמן</button>
+<div><span id="message" class="">{{message}}</span></div>

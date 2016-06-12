@@ -1,0 +1,13 @@
+<div class="menu-items">
+    <div class="menu-item" ng-repeat="item in menu track by $index">
+        <a ng-href="{{item.path}}" ng-click="menuClicked(item.onClick)" >
+            <img class="menu-item-img" src="css/img/{{item.image}}" />
+            <span class="menu-item-txt">{{item.name}}</span>
+        </a>
+    </div>
+</div>
+
+<div ng-show="{{showTable}}" class="menu-item-container" style="background-color: #CC3F3F">
+    <img src="css/img/table.png" />
+    <span style="font-size: 30px">שולחן מס' 5</span>
+</div>
