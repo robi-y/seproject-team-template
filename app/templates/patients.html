@@ -1,0 +1,41 @@
+
+<!--=====================
+          Content
+======================-->
+<section id="content" >
+
+<div >
+	<table>
+		<thead>
+			<th>Name</th>
+			<th>Family</th>
+			<th>Phone</th>
+			<th>Email</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="patient in patients" >
+				<td>{{patient.firstName}}</td>
+				<td>{{patient.lastName}}</td>
+				<td>{{patient.phone}}</td>
+				<td>{{patient.EMail}}</td>
+				<td><button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="editItem(item)">Edit</button></td>
+				<td><button class="btn" ng-click="removeItem(item)">Remove</button></div></td>
+				<td><button class="btn" ng-click="removeItem(item)">add document</button></div></td>
+				
+				
+			</tr>
+		</tbody>
+	<table>
+
+</div>   
+</section>
+
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+ 
