@@ -80,12 +80,5 @@ myApp.controller('theropistdata', function ($scope) {
 	
 });
 
-.service("patientsService",function($http,$q){
-	var deferred = $q.defer();
-	$http.post('https://api.mlab.com/api/1/databases/speach-theropy/collections/Patient?apiKey=XvABGEjSRBRVhRBHAwKr5XvGS32ARJXw').then(function(data){
-		deferred.resolve(data);
-	});
-	this.getPatients = function(){
-		return deferred.promise;
-	}
-})
+
+
