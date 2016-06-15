@@ -2,11 +2,36 @@
 <!--=====================
           Content
 ======================-->
-
+<section id="content" >
 <div style="float:right; padding-top:30px; display:inline">
 <button  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" ng-click="addItem()">הוסף חדש</button>
 </div>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-show="displayForm">
+  <div class="modal-dialog">
+    <div class="modal-content">      
+      <div class="modal-body">
+      
+ 		  <div class="form-group">  <input type="text" ng-model="employee.name"  class="form-control" placeholder="שם"/></div>
+          <div class="form-group"><input type="text" ng-model="employee.email"  class="form-control" placeholder="מייל"/></div>
+          <div class="form-group"> <input type="text" ng-model="employee.phone"  class="form-control" placeholder="טלפון"/></div>          
+     
+      </div>
+      <div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>      
+     	 <button class="btn btn-primary" ng-click="saveItem()">שמור</button>
+     	 
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/vendor/requirejs/require.js" data-main="/js/main"></script> 
+
+
+
+</section>
 
 <section id="content" >
 
