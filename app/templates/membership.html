@@ -17,34 +17,28 @@
       <div class="grid_12">
         
       </div>
-      <div class="clear"></div>
-        <form id="contact-form">
-          <div class="contact-form-loader"></div>
-          <div class="grid_6">
-            <label class="name">
-			</br></br>
-              <input type="text" name="name"  placeholder="שם משתמש/E-mail:" value="" data-constraints="@Required @JustLetters"  />
-              <span class="empty-message">*שדה חובה</span>
-              <span class="error-message">*This is not a valid name.</span>
-            </label>
-           </br></br>
-            <label class="email"><!--=צריך לשנות את הקלאס לסיסמה  ==-->
-              <input type="text" name="email" placeholder="סיסמה:" value="" data-constraints="@Required @Email" />
-              <span class="empty-message">שדה חובה*</span>
-              <span class="error-message">*This is not a valid email.</span>
-            </label>
-           </div>
-	<div class="container_12">
-    <div class="grid_12">
-             <div class="ta__center" >
-          <a href="#/form" style="font-family:BN Amnesia"  data-type="submit">התחבר</a>
-		  <a href="#/register" style="font-family:BN Amnesia"  data-type="submit">משתמש חדש</a>
-		  </div>
-            </div>
-          </div> 
-		    </div>
-          </div> 
+   
+	
+    
+           
+<div class="container_12"><br>
+        <form name="myForm" class="ta__center">
+            <input name="name" ng-model="name"   placeholder="שם משתמש / אימייל"  required>
+            <span class="errMessage" ng-show="!myForm.name.$valid">*</span>
 
+            <input name="password" ng-model="password" type="password"  placeholder="סיסמה" required>
+            <span class="errMessage" ng-show="!myForm.password.$valid">*</span>
+        </form><br>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="ta__center" >
+                  <a href="#/patients" style="font-family:BN Amnesia"  data-type="submit">כניסה</a>
+                    <br>
+                  <a href="#/register" style="font-family:BN Amnesia"  data-type="submit">צור משתמש חדש</a>
+                </div>
+            </div>
+        </div>
+    </div>
           <div class="modal fade response-message">
             
           </div>
@@ -54,3 +48,5 @@
     </div>
   </article>
 </section>
+
+
