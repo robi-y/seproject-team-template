@@ -70,13 +70,89 @@ myApp.controller('theropistdata', function ($scope) {
 })
 
 
-.controller('patientsController',function($scope,patientsService){
+.controller('patientsController',function($scope,$http,$q,patientsService){
 	var promise = patientsService.getPatients();
 	promise.then(function(data){
 		
 		$scope.patients = data.data;
-		console.log("this is my data",$scope.patients);
+		//console.log("this is my data",$scope.patients);
 	});
+	
+	function resetItem(){
+	   $scope.patient = {
+		  firstName : '',
+		  lastName : '',
+		  phone : '',
+		  EMail : ''
+	   };              
+	   $scope.displayForm = '';
+	   
+	}
+	resetItem();
+	
+	$scope.addItem = function () {
+	   resetItem();
+	   $scope.displayForm = true;
+	 };
+	 
+	 $scope.saveItem = function () {		 
+		 $scope.displayForm = false;	
+	 };
+	 
+	 
+	 
+	 $scope.editItem = function (data) {       
+			$scope.patient = data;
+			$scope.displayForm2 = true;
+	};
+		 
+    $scope.create = function() {
+        $http.post('https://api.mlab.com/api/1/databases/speach-theropy/collections/Patient?apiKey=XvABGEjSRBRVhRBHAwKr5XvGS32ARJXw', { 'firstName': $scope.patient.firstName, 'lastName': $scope.patient.lastName, 'phone': $scope.patient.phone, 'EMail': $scope.patient.EMail })
+            .then(function(response) {
+                console.log("data entered");
+                $scope.displayForm = false;	
+            });
+    };
+	
+	$scope.update = function(id) {
+        $http.put('https://api.mlab.com/api/1/databases/speach-theropy/collections/Patient' + id + '?apiKey=XvABGEjSRBRVhRBHAwKr5XvGS32ARJXw', { 'firstName': $scope.patient.firstName, 'lastName': $scope.patient.lastName, 'phone': $scope.patient.phone, 'EMail': $scope.patient.EMail })
+            .success(function(response) {
+                console.log('updated');
+				$scope.displayForm2 = false;
+            });
+    }
+	
+	//$scope.removeItem = function (data) {
+          //if (confirm('Do you really want to delete?')){
+           // $http['delete']('/patient/' + data.id).success(function() {
+              //$scope.items.splice($scope.items.indexOf(data), 1);
+            //});
+          //}
+        //};
+		
+		
+		
+	
+    $scope.removeItem = function(id) {
+		if (confirm('Do you really want to delete?')){
+        $http['delete']('https://api.mlab.com/api/1/databases/speach-theropy/collections/Patient' + id + '?apiKey=XvABGEjSRBRVhRBHAwKr5XvGS32ARJXw')
+            .then(function(response) {
+				$scope.items.splice($scope.patients.indexOf(patient), 1);
+                console.log('Deleted');
+            });
+		}
+    }
+		
+		
+	  $scope.removeModal= function(){
+         // $('.modal').modal('hide');
+          $scope.displayForm = false;		 		  
+      };
+	  
+	  $scope.removeModal2= function(){
+         // $('.modal').modal('hide');
+          $scope.displayForm2 = false;		 		  
+      };
 	
 });
 
