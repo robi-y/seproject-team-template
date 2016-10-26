@@ -9,10 +9,12 @@ A template repository with wiki for a team project at JCE's software engineering
 ## Our Mission
 To make the world a better place by a new application that enables, tec...
 
-## Badges
-CI:  [![Build Status](https://travis-ci.com/jce-il/se-class-materials.svg?token=A32fEPgKUvjwnDqzT4qn&branch=master)](https://travis-ci.com/jce-il/se-class-materials)
+## Tools & Practices
+We're trying to use the best tools and practices in order to produce a quality enginneered product.
 
-Chat: [![Join the chat at https://gitter.im/jce-il/seproject-team-template](https://badges.gitter.im/kce-il/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Build Status (CI):  [![Build Status](https://travis-ci.com/jce-il/se-class-materials.svg?token=A32fEPgKUvjwnDqzT4qn&branch=master)](https://travis-ci.com/jce-il/se-class-materials)
+
+Group Chat: [![Join the chat at https://gitter.im/jce-il/seproject-team-template](https://badges.gitter.im/jce-il/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 License: [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
@@ -20,13 +22,15 @@ Test Coverege: [![codecov.io](https://codecov.io/github/name/repo/coverage.svg?b
 
 Code Quality: [![Code Climate](https://codeclimate.com/github/name/repo.svg)](https://codeclimate.com/github/name/repo)
 
-JS Lint:
+Code Style: [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/name/repo)
 
-Project Management:
+Current Release : [![Current Version](https://img.shields.io/github/release/jce-il/seproject-team-template.svg?style=flat)](https://github.com/jce-il/seproject-team-template/releases)
 
-Github Issues: [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)]()
+Github Issues : [![GitHub issues](https://img.shields.io/github/issues/jce-il/seproject-team-template.svg?style=flat)](https://github.com/jce-il/seproject-team-template/issues)
 
-Project Course Status: 
+Project Management: [![Current Version](https://img.shields.io/github/projects/jce-il/seproject-team-template.svg?style=flat)](https://github.com/jce-il/seproject-team-template/projects)
+
+Project Course Status: ...
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
 - Alright, currently only a landing page...
